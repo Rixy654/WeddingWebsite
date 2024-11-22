@@ -1,14 +1,16 @@
 import * as React from "react";
 
+import PageWrapper from "../../components/PageWrapper";
+
 interface ComponentProps {
 }
 
 const AboutUs: React.FC<ComponentProps> = () => {
 
   return (
-    <div className='test'>
-      
-    </div>
+    <PageWrapper>
+      <div />
+      </PageWrapper>
   );
 };
 

@@ -1,5 +1,6 @@
 import * as React from "react";
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 import './Envelope.css';
 
@@ -9,9 +10,12 @@ interface ComponentProps {
 const Envelope: React.FC<ComponentProps> = () => {
 
   const [isOpen, setIsOpen] = useState(false);
+  const navigate = useNavigate();
 
   const toggleEnvelope = () => {
+    const path = `about`;
     setIsOpen(!isOpen);
+    setTimeout(() => navigate(path), 500);
   };
 
   return (

@@ -1,9 +1,9 @@
 import './App.css';
-import Homepage from './pages/homepage';
+import Routes from './routes';
 
 function App() {
   return (
-    <Homepage />
+    <Routes />
   );
 }
 
