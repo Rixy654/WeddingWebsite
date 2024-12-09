@@ -1,44 +1,77 @@
-import * as React from "react";
-import { Box } from '@mui/material';
+import * as React from 'react';
+import { useState } from 'react';
+import { Box, Tabs, Tab, Typography, CircularProgress } from '@mui/material';
+import { useNavigate } from 'react-router-dom';
 
-import PageWrapper from "../../components/PageWrapper";
-import RSVPForm from "../../components/RSVPForm";
-
-
-interface ComponentProps {
-}
-
-interface RSVPFormDataObject {
-  name: string;
-  email: string;
-}
+import PageWrapper from '../../components/PageWrapper';
+import RSVPForm from '../../components/RSVPDayForm';
+import RSVPEveningForm from '../../components/RSVPEveningForm';
+import { ComponentProps } from '../../types';
+import { RSVPFormDataObject } from '../../types';
 
 const RSVP: React.FC<ComponentProps> = () => {
+  const [tabIndex, setTabIndex] = useState(0);
+  const [loading, setLoading] = useState(false);
+  const navigate = useNavigate();
 
-  const WEB_APP_URL = 'https://script.google.com/macros/s/AKfycbxpEcoC6qPSHR1noRZ-ATmn2BBpb8FnXQ5v6OpkfdB0sYJPcGfpwv66P0K7p4kGxrit7A/exec';
+  const WEB_APP_URL =
+    'https://script.google.com/macros/s/AKfycbx4zuq6lMiUcVT12En99zBNEVVQMlXgs0AaO8YxW3FcfgdSzWxN82cKIYXX5XNVFRSVvw/exec';
 
   const handleSubmit = async (data: RSVPFormDataObject) => {
     try {
+      const payload = {
+        primaryGuest: {
+          inviteType: tabIndex === 0 ? 'All Day' : 'Evening',
+          name: data.primaryGuest.name,
+          email: data.primaryGuest.email,
+          attending: data.primaryGuest.attending,
+          dietaryRequirements: data.primaryGuest.dietaryRequirements,
+          otherDietaryDetails:
+            data.primaryGuest.dietaryRequirements === 'other'
+              ? data.primaryGuest.otherDietaryDetails
+              : undefined,
+        },
+        additionalGuests: data.additionalGuests.map((guest) => ({
+          inviteType: tabIndex === 0 ? 'All Day' : 'Evening',
+          name: guest.name,
+          email: guest.email,
+          attending: guest.attending,
+          dietaryRequirements: guest.dietaryRequirements,
+          otherDietaryDetails:
+            guest.dietaryRequirements === 'other'
+              ? guest.otherDietaryDetails
+              : undefined,
+        })),
+      };
+
+      setLoading(true);
+
       const response = await fetch(WEB_APP_URL, {
         method: 'post',
         headers: {
           'Content-Type': 'text/plain;charset=utf-8',
         },
-        body: JSON.stringify({
-          name: data.name,
-          email: data.email,
-        }),
+        body: JSON.stringify(payload),
       });
 
       const result = await response.json();
+
       if (result.status === 'success') {
-        console.log(result.message);
+        console.log('Submission successful:', result.message);
+        setLoading(false);
+        navigate('/rsvp-success');
       } else {
-        console.log(result.message);
+        setLoading(false);
+        console.error('Submission failed:', result.message);
       }
     } catch (error) {
+      setLoading(false);
       console.error('Error submitting data:', error);
     }
+  };
+
+  const handleTabChange = (event: React.SyntheticEvent, newIndex: number) => {
+    setTabIndex(newIndex);
   };
 
   return (
@@ -47,9 +80,42 @@ const RSVP: React.FC<ComponentProps> = () => {
         display="flex"
         justifyContent="center"
         alignItems="center"
-        minHeight="100vh"
+        position="relative"
       >
-        <RSVPForm handleSubmit={handleSubmit} />
+        <Box
+          sx={{
+            padding: 3,
+            boxShadow: 3,
+            borderRadius: 2,
+            backgroundColor: 'white',
+            width: '100%',
+          }}
+        >
+          <Typography variant="h3" align="center" gutterBottom>
+            RSVP Now
+          </Typography>
+          <Tabs
+            value={tabIndex}
+            onChange={handleTabChange}
+            indicatorColor="primary"
+            textColor="primary"
+            centered
+          >
+            <Tab label="All Day Guest" />
+            <Tab label="Evening Guest" />
+          </Tabs>
+          {tabIndex === 0 && (
+            <RSVPForm handleSubmit={handleSubmit} guestType="day" />
+          )}
+          {tabIndex === 1 && (
+            <RSVPEveningForm handleSubmit={handleSubmit} guestType="evening" />
+          )}
+          {loading && (
+            <CircularProgress
+              sx={{ position: 'absolute', top: '50%', left: '50%' }}
+            />
+          )}
+        </Box>
       </Box>
     </PageWrapper>
   );

@@ -1,7 +1,7 @@
 import * as React from "react";
 import { Typography, Box } from '@mui/material';
 
-interface ComponentProps {};
+import { ComponentProps } from "../../types";
 
 const Footer: React.FC<ComponentProps> = () => {
   return (

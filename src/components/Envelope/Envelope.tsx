@@ -1,14 +1,11 @@
-import * as React from "react";
-import { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import * as React from 'react';
+import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 
+import { ComponentProps } from '../../types';
 import './Envelope.css';
 
-interface ComponentProps {
-}
-
 const Envelope: React.FC<ComponentProps> = () => {
-
   const [isOpen, setIsOpen] = useState(false);
   const navigate = useNavigate();
 
@@ -21,11 +18,8 @@ const Envelope: React.FC<ComponentProps> = () => {
   return (
     <div className="envelope" onClick={toggleEnvelope}>
       <div className={`envelope-flap ${isOpen ? 'open' : ''}`} />
-      <div className={`seal ${isOpen ? 'open' : ''}`} >
-      </div>
-      <div className="envelope-body">
-        You're Invited
-      </div>
+      <div className={`seal ${isOpen ? 'open' : ''}`}></div>
+      <div className="envelope-body">You're Invited</div>
     </div>
   );
 };

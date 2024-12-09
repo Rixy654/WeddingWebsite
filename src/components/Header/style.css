@@ -1,0 +1,20 @@
+header.header {
+  background-color: transparent;
+  box-shadow: none;
+  color: darkgreen;
+  text-align: center;
+  
+}
+
+.header .header-title {
+  padding: 20px;
+  font-size: 70px;
+  font-family: Snell Roundhand, cursive;
+}
+
+.header .header-subtitle {
+  padding: 0 20px;
+  font-size: 40px;
+  font-family: serif;
+  text-transform: uppercase;
+}

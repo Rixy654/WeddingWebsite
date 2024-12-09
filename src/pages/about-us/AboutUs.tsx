@@ -1,9 +1,7 @@
 import * as React from "react";
 
 import PageWrapper from "../../components/PageWrapper";
-
-interface ComponentProps {
-}
+import { ComponentProps } from "../../types";
 
 const AboutUs: React.FC<ComponentProps> = () => {
 

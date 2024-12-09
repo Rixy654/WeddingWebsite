@@ -1,3 +1,3 @@
-import Envelope from "./Envelope";
+import Envelope from './Envelope';
 
-export default Envelope
+export default Envelope;
