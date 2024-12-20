@@ -4,48 +4,34 @@ import { Link } from 'react-router-dom';
 
 import { ComponentProps } from '../../types';
 import './style.css';
+import headerImage from '../../assets/headerImage.jpeg';
+import MenuLink from '../MenuLink';
 
 const Header: React.FC<ComponentProps> = () => {
   return (
     <AppBar position="static" className="header">
       <Box
         component="img"
-        src="https://placehold.co/2000x100.png"
+        src={headerImage}
         alt="Header Image"
         sx={{ width: '100%' }}
       />
       <Typography variant="h1" component="div" className="header-title">
-        Thomas and Victoria's wedding
+        Victoria & Thomas
       </Typography>
       <Typography variant="h2" component="div" className="header-subtitle">
         Thursday, May 22nd 2025
       </Typography>
       <Toolbar>
         <Box sx={{ display: 'flex', flexGrow: 1, justifyContent: 'center' }}>
-          <Button
-            color="inherit"
-            component={Link}
-            to="/home"
-            sx={{ textTransform: 'none' }}
-          >
-            Home
-          </Button>
-          <Button
-            color="inherit"
-            component={Link}
-            to="/about"
-            sx={{ textTransform: 'none' }}
-          >
-            About us
-          </Button>
-          <Button
-            color="inherit"
-            component={Link}
-            to="/rsvp"
-            sx={{ textTransform: 'none' }}
-          >
-            RSVP
-          </Button>
+          <MenuLink link="/home" text="Home" />
+          <MenuLink link="/rsvp" text="RSVP" />
+          <MenuLink link="/castle" text="The Castle" />
+          <MenuLink link="/accommodation" text="Accommodation" />
+          <MenuLink link="/travel" text="Travel" />
+          <MenuLink link="/day" text="The Day" />
+          <MenuLink link="/about" text="About us" />
+          <MenuLink link="/registry" text="Registry" />
         </Box>
       </Toolbar>
     </AppBar>
