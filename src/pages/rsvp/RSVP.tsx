@@ -5,10 +5,8 @@ import { useNavigate } from 'react-router-dom';
 
 import PageWrapper from '../../components/PageWrapper';
 import RSVPForm from '../../components/RSVPDayForm';
-import { ComponentProps } from '../../types';
-import { RSVPFormDataObject } from '../../types';
 
-const RSVP: React.FC<ComponentProps> = () => {
+const RSVP: React.FC = () => {
   const [tabIndex, setTabIndex] = useState(0);
   const [loading, setLoading] = useState(false);
   const navigate = useNavigate();
@@ -16,7 +14,22 @@ const RSVP: React.FC<ComponentProps> = () => {
   const WEB_APP_URL =
     'https://script.google.com/macros/s/AKfycbx4zuq6lMiUcVT12En99zBNEVVQMlXgs0AaO8YxW3FcfgdSzWxN82cKIYXX5XNVFRSVvw/exec';
 
-  const handleSubmit = async (data: RSVPFormDataObject) => {
+  const handleSubmit = async (data: {
+    primaryGuest: {
+      name: string;
+      email: string;
+      attending: string;
+      dietaryRequirements: string;
+      otherDietaryDetails?: string;
+    };
+    additionalGuests: {
+      name: string;
+      email: string;
+      attending: string;
+      dietaryRequirements: string;
+      otherDietaryDetails?: string;
+    }[];
+  }) => {
     try {
       const payload = {
         primaryGuest: {

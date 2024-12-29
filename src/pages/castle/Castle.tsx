@@ -2,10 +2,9 @@ import * as React from 'react';
 import { Box, Typography } from '@mui/material';
 import { Grid } from '@material-ui/core';
 
-import { ComponentProps } from '../../types';
 import PageWrapper from '../../components/PageWrapper';
 
-const Castle: React.FC<ComponentProps> = () => {
+const Castle: React.FC = () => {
   return (
     <PageWrapper>
       <Box sx={{ padding: 4 }}>
@@ -72,7 +71,11 @@ const Castle: React.FC<ComponentProps> = () => {
             <Typography variant="body1" align="center" gutterBottom>
               For more detailed information, you can explore the official
               website:{' '}
-              <a href="https://www.hedinghamcastle.co.uk/" target="_blank">
+              <a
+                href="https://www.hedinghamcastle.co.uk/"
+                target="_blank"
+                rel="noreferrer"
+              >
                 Hedingham Castle.
               </a>
             </Typography>

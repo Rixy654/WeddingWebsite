@@ -11,9 +11,15 @@ import {
 } from '@mui/material';
 import { Add, Remove } from '@mui/icons-material';
 
-import { RSVPFormProps, RSVPFormDataObject, Guest } from '../../types';
+import { Guest } from '../../types';
 
-const RSVPDayForm: React.FC<RSVPFormProps> = ({ handleSubmit, guestType }) => {
+const RSVPDayForm: React.FC<{
+  handleSubmit: (data: {
+    primaryGuest: Guest;
+    additionalGuests: Guest[];
+  }) => void;
+  guestType: string;
+}> = ({ handleSubmit }) => {
   const [primaryGuest, setPrimaryGuest] = useState<Guest>({
     name: '',
     email: '',
@@ -60,7 +66,10 @@ const RSVPDayForm: React.FC<RSVPFormProps> = ({ handleSubmit, guestType }) => {
 
   const handleFormSubmission = (e: React.FormEvent) => {
     e.preventDefault();
-    const data: RSVPFormDataObject = {
+    const data: {
+      primaryGuest: Guest;
+      additionalGuests: Guest[];
+    } = {
       primaryGuest,
       additionalGuests,
     };

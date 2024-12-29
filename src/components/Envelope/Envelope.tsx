@@ -2,10 +2,9 @@ import * as React from 'react';
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
-import { ComponentProps } from '../../types';
 import './Envelope.css';
 
-const Envelope: React.FC<ComponentProps> = () => {
+const Envelope: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
   const navigate = useNavigate();
 
@@ -16,10 +15,20 @@ const Envelope: React.FC<ComponentProps> = () => {
   };
 
   return (
-    <div className="envelope" onClick={toggleEnvelope}>
+    <div
+      className="envelope"
+      role="button"
+      tabIndex={0}
+      onClick={toggleEnvelope}
+      onKeyDown={(e) => {
+        if (e.key === 'Enter') {
+          toggleEnvelope();
+        }
+      }}
+    >
       <div className={`envelope-flap ${isOpen ? 'open' : ''}`} />
       <div className={`seal ${isOpen ? 'open' : ''}`}></div>
-      <div className="envelope-body">You're Invited</div>
+      <div className="envelope-body">You&apos;re Invited</div>
     </div>
   );
 };

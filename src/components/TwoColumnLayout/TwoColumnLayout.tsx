@@ -2,9 +2,14 @@ import * as React from 'react';
 import { Box, Typography, Button } from '@mui/material';
 import { Grid } from '@material-ui/core';
 
-import { TwoColumnLayoutProps } from '../../types';
-
-const TwoColumnLayout: React.FC<TwoColumnLayoutProps> = ({
+const TwoColumnLayout: React.FC<{
+  title: string;
+  text: string;
+  locationLink: string;
+  bookingLink: string;
+  imageSrc: string;
+  imageOnLeft?: boolean;
+}> = ({
   title,
   text,
   locationLink,

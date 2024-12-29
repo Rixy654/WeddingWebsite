@@ -3,9 +3,8 @@ import { Box } from '@mui/material';
 import { Grid } from '@material-ui/core';
 
 import PageWrapper from '../../components/PageWrapper';
-import { ComponentProps } from '../../types';
 
-const Homepage: React.FC<ComponentProps> = () => {
+const Homepage: React.FC = () => {
   return (
     <PageWrapper>
       <Box sx={{ padding: 4 }}>

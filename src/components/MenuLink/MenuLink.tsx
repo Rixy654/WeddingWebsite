@@ -2,9 +2,10 @@ import * as React from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from '@mui/material';
 
-import { MenuLinkProps } from '../../types';
-
-const MenuLink: React.FC<MenuLinkProps> = ({ link, text }) => {
+const MenuLink: React.FC<{
+  link: string;
+  text: string;
+}> = ({ link, text }) => {
   return (
     <Button
       color="inherit"

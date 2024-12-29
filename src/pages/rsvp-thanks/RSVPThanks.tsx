@@ -1,10 +1,9 @@
 import * as React from 'react';
 import { Box, Typography } from '@mui/material';
 
-import { ComponentProps } from '../../types';
 import PageWrapper from '../../components/PageWrapper';
 
-const RSVPThanks: React.FC<ComponentProps> = () => {
+const RSVPThanks: React.FC = () => {
   return (
     <PageWrapper>
       <Box display="flex" justifyContent="center" alignItems="center">

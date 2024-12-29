@@ -1,11 +1,10 @@
 import * as React from 'react';
 import { Box, Typography } from '@mui/material';
 
-import { ComponentProps } from '../../types';
 import PageWrapper from '../../components/PageWrapper';
 import TwoColumnLayout from '../../components/TwoColumnLayout/TwoColumnLayout';
 
-const Accommodation: React.FC<ComponentProps> = () => {
+const Accommodation: React.FC = () => {
   return (
     <PageWrapper>
       <Box sx={{ padding: 4 }}>

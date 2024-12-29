@@ -1,9 +1,8 @@
 import * as React from 'react';
 
-import { ComponentProps } from '../../types';
 import PageWrapper from '../../components/PageWrapper';
 
-const Day: React.FC<ComponentProps> = () => {
+const Day: React.FC = () => {
   return (
     <PageWrapper>
       <div></div>

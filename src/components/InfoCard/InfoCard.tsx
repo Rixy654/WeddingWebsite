@@ -7,14 +7,12 @@ import {
   Button,
 } from '@mui/material';
 
-import { InfoCardProps } from '../../types';
-
-const InfoCard: React.FC<InfoCardProps> = ({
-  title,
-  text,
-  phoneLink,
-  webLink,
-}) => {
+const InfoCard: React.FC<{
+  title: string;
+  text: string;
+  phoneLink: string;
+  webLink: string;
+}> = ({ title, text, phoneLink, webLink }) => {
   return (
     <Card
       sx={{

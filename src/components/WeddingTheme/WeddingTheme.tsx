@@ -2,9 +2,9 @@ import * as React from 'react';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import CssBaseline from '@mui/material/CssBaseline';
 
-import { PageWrapperProps } from '../../types';
-
-const WeddingTheme: React.FC<PageWrapperProps> = ({ children }) => {
+const WeddingTheme: React.FC<{
+  children: React.ReactNode;
+}> = ({ children }) => {
   const theme = createTheme({
     palette: {
       primary: {

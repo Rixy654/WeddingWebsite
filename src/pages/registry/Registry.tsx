@@ -1,9 +1,8 @@
 import * as React from 'react';
 
-import { ComponentProps } from '../../types';
 import PageWrapper from '../../components/PageWrapper';
 
-const Registry: React.FC<ComponentProps> = () => {
+const Registry: React.FC = () => {
   return (
     <PageWrapper>
       <div></div>

@@ -2,11 +2,10 @@ import * as React from 'react';
 import { Box } from '@mui/material';
 import { Grid } from '@material-ui/core';
 
-import { ComponentProps } from '../../types';
 import PageWrapper from '../../components/PageWrapper';
 import InfoCard from '../../components/InfoCard';
 
-const Travel: React.FC<ComponentProps> = () => {
+const Travel: React.FC = () => {
   return (
     <PageWrapper>
       <Box sx={{ padding: 4 }}>

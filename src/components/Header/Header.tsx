@@ -1,13 +1,11 @@
 import * as React from 'react';
-import { AppBar, Toolbar, Typography, Box, Button } from '@mui/material';
-import { Link } from 'react-router-dom';
+import { AppBar, Toolbar, Typography, Box } from '@mui/material';
 
-import { ComponentProps } from '../../types';
 import './style.css';
 import headerImage from '../../assets/headerImage.jpeg';
 import MenuLink from '../MenuLink';
 
-const Header: React.FC<ComponentProps> = () => {
+const Header: React.FC = () => {
   return (
     <AppBar position="static" className="header">
       <Box

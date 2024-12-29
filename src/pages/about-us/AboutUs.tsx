@@ -1,14 +1,12 @@
-import * as React from "react";
+import * as React from 'react';
 
-import PageWrapper from "../../components/PageWrapper";
-import { ComponentProps } from "../../types";
+import PageWrapper from '../../components/PageWrapper';
 
-const AboutUs: React.FC<ComponentProps> = () => {
-
+const AboutUs: React.FC = () => {
   return (
     <PageWrapper>
       <div />
-      </PageWrapper>
+    </PageWrapper>
   );
 };
 
