@@ -5,7 +5,6 @@ import { useNavigate } from 'react-router-dom';
 
 import PageWrapper from '../../components/PageWrapper';
 import RSVPForm from '../../components/RSVPDayForm';
-import RSVPEveningForm from '../../components/RSVPEveningForm';
 import { ComponentProps } from '../../types';
 import { RSVPFormDataObject } from '../../types';
 
@@ -108,7 +107,7 @@ const RSVP: React.FC<ComponentProps> = () => {
             <RSVPForm handleSubmit={handleSubmit} guestType="day" />
           )}
           {tabIndex === 1 && (
-            <RSVPEveningForm handleSubmit={handleSubmit} guestType="evening" />
+            <RSVPForm handleSubmit={handleSubmit} guestType="evening" />
           )}
           {loading && (
             <CircularProgress

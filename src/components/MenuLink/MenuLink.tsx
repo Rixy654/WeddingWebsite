@@ -10,7 +10,7 @@ const MenuLink: React.FC<MenuLinkProps> = ({ link, text }) => {
       color="inherit"
       component={Link}
       to={link}
-      sx={{ textTransform: 'none' }}
+      sx={{ textTransform: 'none', padding: '6px 15px' }}
     >
       {text}
     </Button>

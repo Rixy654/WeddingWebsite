@@ -3,13 +3,14 @@ header.header {
   box-shadow: none;
   color: darkgreen;
   text-align: center;
-  
 }
 
 .header .header-title {
-  padding: 20px;
+  padding: 0 20px;
   font-size: 70px;
-  font-family: Snell Roundhand, cursive;
+  font-family:
+    Snell Roundhand,
+    cursive;
 }
 
 .header .header-subtitle {
@@ -17,4 +18,8 @@ header.header {
   font-size: 40px;
   font-family: serif;
   text-transform: uppercase;
+}
+
+.header .header-toolbar {
+  min-height: 50px;
 }

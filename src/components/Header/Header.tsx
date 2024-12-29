@@ -19,10 +19,10 @@ const Header: React.FC<ComponentProps> = () => {
       <Typography variant="h1" component="div" className="header-title">
         Victoria & Thomas
       </Typography>
-      <Typography variant="h2" component="div" className="header-subtitle">
-        Thursday, May 22nd 2025
-      </Typography>
-      <Toolbar>
+      <Toolbar
+        sx={{ boxShadow: '0 3px 3px -2px gray', minHeight: 50 }}
+        className="header-toolbar"
+      >
         <Box sx={{ display: 'flex', flexGrow: 1, justifyContent: 'center' }}>
           <MenuLink link="/home" text="Home" />
           <MenuLink link="/rsvp" text="RSVP" />
