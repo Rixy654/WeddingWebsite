@@ -5,8 +5,8 @@ import { Grid } from '@material-ui/core';
 const TwoColumnLayout: React.FC<{
   title: string;
   text: string;
-  locationLink: string;
-  bookingLink: string;
+  locationLink?: string;
+  bookingLink?: string;
   imageSrc: string;
   imageOnLeft?: boolean;
 }> = ({
@@ -37,13 +37,18 @@ const TwoColumnLayout: React.FC<{
         )}
 
         <Grid item xs={12} md={6}>
-          <Typography variant="h3" gutterBottom>
+          <Typography
+            variant="h3"
+            gutterBottom
+            sx={{ fontFamily: "'Bellefair', serif" }}
+          >
             {title}
           </Typography>
-          <Typography variant="body1" paragraph>
+          <Typography variant="body1" sx={{ fontFamily: "'Bellefair', serif" }}>
             {text}
           </Typography>
           <Box sx={{ display: 'flex', gap: 2, marginTop: 2 }}>
+          {locationLink && (
             <Button
               variant="contained"
               color="primary"
@@ -53,6 +58,8 @@ const TwoColumnLayout: React.FC<{
             >
               Location
             </Button>
+          )}
+          {bookingLink && (
             <Button
               variant="outlined"
               color="primary"
@@ -62,6 +69,7 @@ const TwoColumnLayout: React.FC<{
             >
               Booking Link
             </Button>
+            )}
           </Box>
         </Grid>
 

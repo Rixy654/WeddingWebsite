@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Box } from '@mui/material';
+import { Box, Typography } from '@mui/material';
 import { Grid } from '@material-ui/core';
 
 import PageWrapper from '../../components/PageWrapper';
@@ -9,6 +9,68 @@ const Travel: React.FC = () => {
   return (
     <PageWrapper>
       <Box sx={{ padding: 4 }}>
+        <Typography
+          variant="h2"
+          gutterBottom
+          textAlign="center"
+          sx={{ fontFamily: "'Bellefair', serif" }}
+        >
+          Travel
+        </Typography>
+        <Typography
+          variant="h4"
+          gutterBottom
+          textAlign="center"
+          sx={{ fontFamily: "'Bellefair', serif" }}
+        >
+          Address
+        </Typography>
+        <Typography
+          variant="body1"
+          align="center"
+          gutterBottom
+          sx={{ fontFamily: "'Bellefair', serif", fontSize: '20px' }}
+        >
+          Hedingham Castle, Castle Hedingham, Halstead CO9 3DJ
+        </Typography>
+        <Typography
+          variant="body1"
+          align="center"
+          gutterBottom
+          sx={{ fontFamily: "'Bellefair', serif" }}
+        >
+          Parking on-site available
+        </Typography>
+        <Typography
+          variant="h4"
+          gutterBottom
+          textAlign="center"
+          sx={{ fontFamily: "'Bellefair', serif", marginTop: '20px' }}
+        >
+          Nearest Train Station
+        </Typography>
+        <Grid container spacing={4}>
+          <Grid item xs={12} sm={6} md={3}>
+            <InfoCard title="Sudbury" text="Distance: 15 mins" />
+          </Grid>
+          <Grid item xs={12} sm={6} md={3}>
+            <InfoCard title="Braintree" text="Distance: 20 mins" />
+          </Grid>
+          <Grid item xs={12} sm={6} md={3}>
+            <InfoCard title="Chappel & Wakes Colne" text="Distance: 25 mins" />
+          </Grid>
+          <Grid item xs={12} sm={6} md={3}>
+            <InfoCard title="Colchester" text="Distance: 40 mins" />
+          </Grid>
+        </Grid>
+        <Typography
+          variant="h4"
+          gutterBottom
+          textAlign="center"
+          sx={{ fontFamily: "'Bellefair', serif", marginTop: '20px' }}
+        >
+          Taxi's
+        </Typography>
         <Grid container spacing={4}>
           <Grid item xs={12} sm={6} md={3}>
             <InfoCard

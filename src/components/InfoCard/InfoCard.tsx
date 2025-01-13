@@ -10,8 +10,8 @@ import {
 const InfoCard: React.FC<{
   title: string;
   text: string;
-  phoneLink: string;
-  webLink: string;
+  phoneLink?: string;
+  webLink?: string;
 }> = ({ title, text, phoneLink, webLink }) => {
   return (
     <Card
@@ -25,14 +25,15 @@ const InfoCard: React.FC<{
       }}
     >
       <CardContent>
-        <Typography variant="h5" gutterBottom>
+        <Typography variant="h5" gutterBottom sx={{ fontFamily: "'Bellefair', serif" }}>
           {title}
         </Typography>
-        <Typography variant="body2" color="textSecondary">
+        <Typography variant="body2" color="textSecondary" sx={{ fontFamily: "'Bellefair', serif" }}>
           {text}
         </Typography>
       </CardContent>
       <CardActions sx={{ marginTop: 'auto' }}>
+      {phoneLink && (
         <Button
           size="small"
           variant="contained"
@@ -41,6 +42,8 @@ const InfoCard: React.FC<{
         >
           Call
         </Button>
+      )}
+      {webLink && (
         <Button
           size="small"
           variant="outlined"
@@ -51,6 +54,7 @@ const InfoCard: React.FC<{
         >
           Website
         </Button>
+      )}
       </CardActions>
     </Card>
   );
