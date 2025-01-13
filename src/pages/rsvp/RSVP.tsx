@@ -103,7 +103,12 @@ const RSVP: React.FC = () => {
             width: '100%',
           }}
         >
-          <Typography variant="h3" align="center" gutterBottom sx={{ fontFamily: "'Bellefair', serif" }}>
+          <Typography
+            variant="h3"
+            align="center"
+            gutterBottom
+            sx={{ fontFamily: "'Bellefair', serif" }}
+          >
             RSVP Now
           </Typography>
           <Tabs

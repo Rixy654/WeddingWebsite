@@ -48,27 +48,27 @@ const TwoColumnLayout: React.FC<{
             {text}
           </Typography>
           <Box sx={{ display: 'flex', gap: 2, marginTop: 2 }}>
-          {locationLink && (
-            <Button
-              variant="contained"
-              color="primary"
-              href={locationLink}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Location
-            </Button>
-          )}
-          {bookingLink && (
-            <Button
-              variant="outlined"
-              color="primary"
-              href={bookingLink}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Booking Link
-            </Button>
+            {locationLink && (
+              <Button
+                variant="contained"
+                color="primary"
+                href={locationLink}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Location
+              </Button>
+            )}
+            {bookingLink && (
+              <Button
+                variant="outlined"
+                color="primary"
+                href={bookingLink}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Booking Link
+              </Button>
             )}
           </Box>
         </Grid>

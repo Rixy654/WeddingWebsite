@@ -69,7 +69,7 @@ const Travel: React.FC = () => {
           textAlign="center"
           sx={{ fontFamily: "'Bellefair', serif", marginTop: '20px' }}
         >
-          Taxi's
+          Taxi&apos;s
         </Typography>
         <Grid container spacing={4}>
           <Grid item xs={12} sm={6} md={3}>

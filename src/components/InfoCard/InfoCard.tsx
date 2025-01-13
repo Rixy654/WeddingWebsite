@@ -25,36 +25,44 @@ const InfoCard: React.FC<{
       }}
     >
       <CardContent>
-        <Typography variant="h5" gutterBottom sx={{ fontFamily: "'Bellefair', serif" }}>
+        <Typography
+          variant="h5"
+          gutterBottom
+          sx={{ fontFamily: "'Bellefair', serif" }}
+        >
           {title}
         </Typography>
-        <Typography variant="body2" color="textSecondary" sx={{ fontFamily: "'Bellefair', serif" }}>
+        <Typography
+          variant="body2"
+          color="textSecondary"
+          sx={{ fontFamily: "'Bellefair', serif" }}
+        >
           {text}
         </Typography>
       </CardContent>
       <CardActions sx={{ marginTop: 'auto' }}>
-      {phoneLink && (
-        <Button
-          size="small"
-          variant="contained"
-          color="primary"
-          href={`tel:${phoneLink}`}
-        >
-          Call
-        </Button>
-      )}
-      {webLink && (
-        <Button
-          size="small"
-          variant="outlined"
-          color="primary"
-          href={webLink}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Website
-        </Button>
-      )}
+        {phoneLink && (
+          <Button
+            size="small"
+            variant="contained"
+            color="primary"
+            href={`tel:${phoneLink}`}
+          >
+            Call
+          </Button>
+        )}
+        {webLink && (
+          <Button
+            size="small"
+            variant="outlined"
+            color="primary"
+            href={webLink}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Website
+          </Button>
+        )}
       </CardActions>
     </Card>
   );

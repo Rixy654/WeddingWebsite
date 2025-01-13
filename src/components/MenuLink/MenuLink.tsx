@@ -11,7 +11,12 @@ const MenuLink: React.FC<{
       color="inherit"
       component={Link}
       to={link}
-      sx={{ textTransform: 'none', padding: '6px 15px', fontFamily: "'Bellefair', serif", fontSize: '16px' }}
+      sx={{
+        textTransform: 'none',
+        padding: '6px 15px',
+        fontFamily: "'Bellefair', serif",
+        fontSize: '16px',
+      }}
     >
       {text}
     </Button>
