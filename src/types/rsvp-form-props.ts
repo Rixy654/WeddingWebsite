@@ -12,6 +12,7 @@ export interface Guest {
   name: string;
   email: string;
   attending: string;
+  song: string;
   dietaryRequirements: string;
   otherDietaryDetails?: string;
 }

@@ -12,13 +12,14 @@ const RSVP: React.FC = () => {
   const navigate = useNavigate();
 
   const WEB_APP_URL =
-    'https://script.google.com/macros/s/AKfycbx4zuq6lMiUcVT12En99zBNEVVQMlXgs0AaO8YxW3FcfgdSzWxN82cKIYXX5XNVFRSVvw/exec';
+    'https://script.google.com/macros/s/AKfycbzIwgwfkfqrlUcTpUyFBTLQ_RdHui0lxznV7Ruvn2ZW0mUg_kzLhr81mrtFKMAHKaACKw/exec';
 
   const handleSubmit = async (data: {
     primaryGuest: {
       name: string;
       email: string;
       attending: string;
+      song: string;
       dietaryRequirements: string;
       otherDietaryDetails?: string;
     };
@@ -26,6 +27,7 @@ const RSVP: React.FC = () => {
       name: string;
       email: string;
       attending: string;
+      song: string;
       dietaryRequirements: string;
       otherDietaryDetails?: string;
     }[];
@@ -37,6 +39,7 @@ const RSVP: React.FC = () => {
           name: data.primaryGuest.name,
           email: data.primaryGuest.email,
           attending: data.primaryGuest.attending,
+          song: data.primaryGuest.song,
           dietaryRequirements: data.primaryGuest.dietaryRequirements,
           otherDietaryDetails:
             data.primaryGuest.dietaryRequirements === 'other'
@@ -48,6 +51,7 @@ const RSVP: React.FC = () => {
           name: guest.name,
           email: guest.email,
           attending: guest.attending,
+          song: guest.song,
           dietaryRequirements: guest.dietaryRequirements,
           otherDietaryDetails:
             guest.dietaryRequirements === 'other'
@@ -103,12 +107,7 @@ const RSVP: React.FC = () => {
             width: '100%',
           }}
         >
-          <Typography
-            variant="h3"
-            align="center"
-            gutterBottom
-            sx={{ fontFamily: "'Bellefair', serif" }}
-          >
+          <Typography variant="h3" align="center" gutterBottom>
             RSVP Now
           </Typography>
           <Tabs

@@ -44,7 +44,6 @@ const Header: React.FC = () => {
               justifyContent: 'center',
             }}
           >
-            <MenuLink link="/home" text="Home" />
             <MenuLink link="/rsvp" text="RSVP" />
             <MenuLink link="/castle" text="The Castle" />
             <MenuLink link="/accommodation" text="Accommodation" />
@@ -52,6 +51,7 @@ const Header: React.FC = () => {
             <MenuLink link="/day" text="The Day" />
             <MenuLink link="/about" text="About us" />
             <MenuLink link="/registry" text="Registry" />
+            <MenuLink link="/faq" text="FAQs" />
           </Box>
           <IconButton
             color="inherit"
@@ -72,7 +72,6 @@ const Header: React.FC = () => {
           '& .MuiDrawer-paper': { width: 250 },
         }}
       >
-        <MenuLink link="/home" text="Home" />
         <MenuLink link="/rsvp" text="RSVP" />
         <MenuLink link="/castle" text="The Castle" />
         <MenuLink link="/accommodation" text="Accommodation" />

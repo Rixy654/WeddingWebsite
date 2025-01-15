@@ -24,6 +24,7 @@ const RSVPDayForm: React.FC<{
     name: '',
     email: '',
     attending: '',
+    song: '',
     dietaryRequirements: 'none',
     otherDietaryDetails: '',
   });
@@ -54,6 +55,7 @@ const RSVPDayForm: React.FC<{
         name: '',
         email: '',
         attending: '',
+        song: '',
         dietaryRequirements: 'none',
         otherDietaryDetails: '',
       },
@@ -85,6 +87,7 @@ const RSVPDayForm: React.FC<{
         gap: 2,
         marginTop: 3,
       }}
+      onSubmit={handleFormSubmission}
     >
       <TextField
         type="text"
@@ -116,6 +119,13 @@ const RSVPDayForm: React.FC<{
           <MenuItem value="No">No</MenuItem>
         </Select>
       </FormControl>
+      <TextField
+        type="text"
+        label="What song would get you on the dancefloor?"
+        value={primaryGuest.song}
+        onChange={(e) => handlePrimaryGuestChange('song', e.target.value)}
+        fullWidth
+      />
       <FormControl fullWidth required>
         <InputLabel id="dietary-label">Dietary Requirements</InputLabel>
         <Select
@@ -189,6 +199,13 @@ const RSVPDayForm: React.FC<{
               <MenuItem value="No">No</MenuItem>
             </Select>
           </FormControl>
+          <TextField
+            type="text"
+            label="What song would get you on the dancefloor?"
+            value={guest.song}
+            onChange={(e) => handleGuestChange(index, 'song', e.target.value)}
+            fullWidth
+          />
           <FormControl fullWidth required>
             <InputLabel id={`dietary-label-${index}`}>
               Dietary Requirements
@@ -240,12 +257,7 @@ const RSVPDayForm: React.FC<{
         Add Additional Guest
       </Button>
 
-      <Button
-        variant="contained"
-        type="submit"
-        onClick={handleFormSubmission}
-        fullWidth
-      >
+      <Button variant="contained" type="submit" fullWidth>
         Submit
       </Button>
     </Box>

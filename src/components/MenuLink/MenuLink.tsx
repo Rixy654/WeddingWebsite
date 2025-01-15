@@ -14,7 +14,6 @@ const MenuLink: React.FC<{
       sx={{
         textTransform: 'none',
         padding: '6px 15px',
-        fontFamily: "'Bellefair', serif",
         fontSize: '16px',
       }}
     >

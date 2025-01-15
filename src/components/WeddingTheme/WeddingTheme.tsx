@@ -11,6 +11,9 @@ const WeddingTheme: React.FC<{
         main: '#006400', // Custom primary color
       },
     },
+    typography: {
+      fontFamily: "'Bellefair', serif",
+    },
   });
 
   return (

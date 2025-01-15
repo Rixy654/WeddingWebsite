@@ -37,16 +37,10 @@ const TwoColumnLayout: React.FC<{
         )}
 
         <Grid item xs={12} md={6}>
-          <Typography
-            variant="h3"
-            gutterBottom
-            sx={{ fontFamily: "'Bellefair', serif" }}
-          >
+          <Typography variant="h3" gutterBottom>
             {title}
           </Typography>
-          <Typography variant="body1" sx={{ fontFamily: "'Bellefair', serif" }}>
-            {text}
-          </Typography>
+          <Typography variant="body1">{text}</Typography>
           <Box sx={{ display: 'flex', gap: 2, marginTop: 2 }}>
             {locationLink && (
               <Button

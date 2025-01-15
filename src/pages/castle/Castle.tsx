@@ -8,20 +8,10 @@ const Castle: React.FC = () => {
   return (
     <PageWrapper>
       <Box sx={{ padding: 4 }}>
-        <Typography
-          variant="h2"
-          gutterBottom
-          textAlign="center"
-          sx={{ fontFamily: "'Bellefair', serif" }}
-        >
+        <Typography variant="h2" gutterBottom textAlign="center">
           The Castle
         </Typography>
-        <Typography
-          variant="body1"
-          align="center"
-          gutterBottom
-          sx={{ fontFamily: "'Bellefair', serif" }}
-        >
+        <Typography variant="body1" align="center" gutterBottom>
           Hedingham Castle, located in Castle Hedingham, Essex, is a remarkable
           example of Norman architecture and is often cited as one of the
           best-preserved Norman keeps in England.
@@ -81,12 +71,7 @@ const Castle: React.FC = () => {
           imageSrc="https://images.squarespace-cdn.com/content/v1/5e5e5b280b09a761c4a81365/71f2a734-4570-4093-bf51-3a797f144e99/hedingham-castle-family-event.jpg"
           imageOnLeft
         />
-        <Typography
-          variant="body1"
-          align="center"
-          gutterBottom
-          sx={{ fontFamily: "'Bellefair', serif" }}
-        >
+        <Typography variant="body1" align="center" gutterBottom>
           For more detailed information, you can explore the official website:{' '}
           <a
             href="https://www.hedinghamcastle.co.uk/"

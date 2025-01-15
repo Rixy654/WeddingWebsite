@@ -4,7 +4,6 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import LandingPage from '../pages/landing-page';
 import AboutUs from '../pages/about-us';
 import RSVP from '../pages/rsvp';
-import Homepage from '../pages/homepage';
 import PageWrapper from '../components/PageWrapper';
 import RSVPThanks from '../pages/rsvp-thanks';
 import Castle from '../pages/castle';
@@ -12,13 +11,13 @@ import Accommodation from '../pages/accommodation';
 import Travel from '../pages/travel';
 import Day from '../pages/day';
 import Registry from '../pages/registry';
+import FAQ from '../pages/faq';
 
 const App: React.FC = () => {
   return (
     <Router>
       <Routes>
         <Route path="/" element={<LandingPage />} />
-        <Route path="/home" element={<Homepage />} />
         <Route path="/about" element={<AboutUs />} />
         <Route path="/rsvp" element={<RSVP />} />
         <Route path="/rsvp-success" element={<RSVPThanks />} />
@@ -27,6 +26,7 @@ const App: React.FC = () => {
         <Route path="/travel" element={<Travel />} />
         <Route path="/day" element={<Day />} />
         <Route path="/registry" element={<Registry />} />
+        <Route path="/faq" element={<FAQ />} />
         <Route
           path="*"
           element={

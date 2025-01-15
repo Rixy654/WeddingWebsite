@@ -9,43 +9,28 @@ const Travel: React.FC = () => {
   return (
     <PageWrapper>
       <Box sx={{ padding: 4 }}>
-        <Typography
-          variant="h2"
-          gutterBottom
-          textAlign="center"
-          sx={{ fontFamily: "'Bellefair', serif" }}
-        >
+        <Typography variant="h2" gutterBottom textAlign="center">
           Travel
         </Typography>
-        <Typography
-          variant="h4"
-          gutterBottom
-          textAlign="center"
-          sx={{ fontFamily: "'Bellefair', serif" }}
-        >
+        <Typography variant="h4" gutterBottom textAlign="center">
           Address
         </Typography>
         <Typography
           variant="body1"
           align="center"
           gutterBottom
-          sx={{ fontFamily: "'Bellefair', serif", fontSize: '20px' }}
+          sx={{ fontSize: '20px' }}
         >
           Hedingham Castle, Castle Hedingham, Halstead CO9 3DJ
         </Typography>
-        <Typography
-          variant="body1"
-          align="center"
-          gutterBottom
-          sx={{ fontFamily: "'Bellefair', serif" }}
-        >
+        <Typography variant="body1" align="center" gutterBottom>
           Parking on-site available
         </Typography>
         <Typography
           variant="h4"
           gutterBottom
           textAlign="center"
-          sx={{ fontFamily: "'Bellefair', serif", marginTop: '20px' }}
+          sx={{ marginTop: '20px' }}
         >
           Nearest Train Station
         </Typography>
@@ -67,7 +52,7 @@ const Travel: React.FC = () => {
           variant="h4"
           gutterBottom
           textAlign="center"
-          sx={{ fontFamily: "'Bellefair', serif", marginTop: '20px' }}
+          sx={{ marginTop: '20px' }}
         >
           Taxi&apos;s
         </Typography>

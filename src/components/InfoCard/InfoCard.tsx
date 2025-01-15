@@ -25,18 +25,10 @@ const InfoCard: React.FC<{
       }}
     >
       <CardContent>
-        <Typography
-          variant="h5"
-          gutterBottom
-          sx={{ fontFamily: "'Bellefair', serif" }}
-        >
+        <Typography variant="h5" gutterBottom>
           {title}
         </Typography>
-        <Typography
-          variant="body2"
-          color="textSecondary"
-          sx={{ fontFamily: "'Bellefair', serif" }}
-        >
+        <Typography variant="body2" color="textSecondary">
           {text}
         </Typography>
       </CardContent>

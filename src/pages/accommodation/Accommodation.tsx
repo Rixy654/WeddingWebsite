@@ -8,12 +8,7 @@ const Accommodation: React.FC = () => {
   return (
     <PageWrapper>
       <Box sx={{ padding: 4 }}>
-        <Typography
-          variant="h2"
-          gutterBottom
-          textAlign="center"
-          sx={{ fontFamily: "'Bellefair', serif" }}
-        >
+        <Typography variant="h2" gutterBottom textAlign="center">
           Accomodation Nearby
         </Typography>
         <TwoColumnLayout
