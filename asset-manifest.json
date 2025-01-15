@@ -1,17 +1,28 @@
 {
   "files": {
-    "main.css": "/static/css/main.1c4a51ad.css",
-    "main.js": "/static/js/main.8cf3f5a4.js",
+    "main.css": "/static/css/main.fea8900a.css",
+    "main.js": "/static/js/main.14af6b2b.js",
     "static/js/845.d87ca284.chunk.js": "/static/js/845.d87ca284.chunk.js",
+    "static/media/kevin.jpeg": "/static/media/kevin.057b342640f5319b2dfb.jpeg",
+    "static/media/flat.jpeg": "/static/media/flat.d267d030878dc2744f99.jpeg",
+    "static/media/kenya.jpeg": "/static/media/kenya.966d2646426481361a4e.jpeg",
     "static/media/homepageImage.jpeg": "/static/media/homepageImage.76557ab2431f77250aa9.jpeg",
+    "static/media/seal.png": "/static/media/seal.0530453eedfe69fbc5d2.png",
+    "static/media/newYork.png": "/static/media/newYork.6ccc65efa51743838b1c.png",
+    "static/media/brix.jpeg": "/static/media/brix.7e12c35bcf48d564150c.jpeg",
+    "static/media/engagement.jpeg": "/static/media/engagement.cf302effaacd9cf858bb.jpeg",
+    "static/media/berlin.jpeg": "/static/media/berlin.b0ff8211e78ff4d60cb4.jpeg",
+    "static/media/seagulls.jpeg": "/static/media/seagulls.fbd2715e035170422e60.jpeg",
+    "static/media/yacht.jpeg": "/static/media/yacht.1208e1f6863a79716351.jpeg",
     "static/media/headerImage.png": "/static/media/headerImage.8092aa2b9afa587c33e8.png",
+    "static/media/theDay.jpeg": "/static/media/theDay.93272716bb69857472bd.jpeg",
     "index.html": "/index.html",
-    "main.1c4a51ad.css.map": "/static/css/main.1c4a51ad.css.map",
-    "main.8cf3f5a4.js.map": "/static/js/main.8cf3f5a4.js.map",
+    "main.fea8900a.css.map": "/static/css/main.fea8900a.css.map",
+    "main.14af6b2b.js.map": "/static/js/main.14af6b2b.js.map",
     "845.d87ca284.chunk.js.map": "/static/js/845.d87ca284.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.1c4a51ad.css",
-    "static/js/main.8cf3f5a4.js"
+    "static/css/main.fea8900a.css",
+    "static/js/main.14af6b2b.js"
   ]
 }
