@@ -2,6 +2,17 @@ import * as React from 'react';
 import { Box, Typography } from '@mui/material';
 
 import PageWrapper from '../../components/PageWrapper';
+import ImageWithCaption from '../../components/ImageWithCaption';
+
+import seagulls from '../../assets/about/seagulls.jpeg';
+import berlin from '../../assets/about/berlin.jpeg';
+import kenya from '../../assets/about/kenya.jpeg';
+import flat from '../../assets/about/flat.jpeg';
+import newYork from '../../assets/about/newYork.png';
+import yacht from '../../assets/about/yacht.jpeg';
+import engagement from '../../assets/about/engagement.jpeg';
+import brix from '../../assets/about/brix.jpeg';
+import kevin from '../../assets/about/kevin.jpeg';
 
 const AboutUs: React.FC = () => {
   return (
@@ -10,6 +21,13 @@ const AboutUs: React.FC = () => {
         <Typography variant="h2" gutterBottom textAlign="center">
           About Us
         </Typography>
+        <ImageWithCaption
+          src={seagulls}
+          alt="Seagulls"
+          caption="Where it all started"
+          isRight
+          width="20%"
+        />
         <Typography variant="body1" align="center" gutterBottom>
           It all started in 2021, just as the world was reopening after
           lockdowns, and apparently, so were we. We met online and spent three
@@ -18,15 +36,6 @@ const AboutUs: React.FC = () => {
           heist. Naturally, we decided it was time to meet in person to refine
           our heist plan.
         </Typography>
-        <img
-          src="https://placehold.co/600x400.png"
-          alt="test"
-          style={{
-            float: 'right',
-            margin: '10px 0 10px 10px',
-            maxWidth: '100%',
-          }}
-        />
         <Typography variant="body1" align="center" gutterBottom>
           In September, we had our first date in a wine bar in Covent Garden,
           which, tragically (and perhaps suspiciously?), has since shut down.
@@ -44,6 +53,12 @@ const AboutUs: React.FC = () => {
           mistakenly thought was a permanent affliction. Nevertheless, he
           gallantly walked her home, thus cementing his hero status.
         </Typography>
+        <ImageWithCaption
+          src={berlin}
+          alt="Berlin"
+          caption="In Berlin"
+          width="20%"
+        />
         <Typography variant="body1" align="center" gutterBottom>
           Two days later, Thomas made good on a promise from our first date and
           took Victoria to The Shard (she had never been). For the third date,
@@ -52,6 +67,13 @@ const AboutUs: React.FC = () => {
           in. Not ones to be deterred, we scaled a fence and made it out,
           laughing all the way.
         </Typography>
+        <ImageWithCaption
+          src={kenya}
+          alt="Kenya"
+          caption="In Kenya"
+          isRight
+          width="20%"
+        />
         <Typography variant="body1" align="center" gutterBottom>
           Our fourth date was even more dramatic. This time, Hyde Park was the
           culprit. We lost track of time while walking and found ourselves
@@ -70,6 +92,12 @@ const AboutUs: React.FC = () => {
           trip, became a lasting part of our story—he was the one holding the
           ring box when Thomas proposed a couple of years later.
         </Typography>
+        <ImageWithCaption
+          src={flat}
+          alt="In the flat"
+          caption="Our first home"
+          width="20%"
+        />
         <Typography variant="body1" align="center" gutterBottom>
           Next came Berlin, which was Thomas&lsquo; first trip abroad and where
           we explored the city with a mix of excitement and way too much
@@ -90,6 +118,13 @@ const AboutUs: React.FC = () => {
           spending an extra two days there, turning the chaos into an unexpected
           mini-holiday extension.
         </Typography>
+        <ImageWithCaption
+          src={newYork}
+          alt="New York"
+          caption="New York!"
+          width="20%"
+          isRight
+        />
         <Typography variant="body1" align="center" gutterBottom>
           By summer 2022, we decided it was time to take the next big step and
           moved in together in Canary Wharf. Our new home had arguably one of
@@ -112,6 +147,12 @@ const AboutUs: React.FC = () => {
           made another trip to Brighton, where seagulls once again made their
           obligatory appearance.
         </Typography>
+        <ImageWithCaption
+          src={yacht}
+          alt="Yacht"
+          caption="A promise kept"
+          width="20%"
+        />
         <Typography variant="body1" align="center" gutterBottom>
           Then came the 3rd of September 2023. Exactly two years after our very
           first date, Thomas proposed in our living room. The celebration began
@@ -136,6 +177,13 @@ const AboutUs: React.FC = () => {
           celebration thrown in for good measure. Nothing like cramming every
           major milestone into eight weeks!
         </Typography>
+        <ImageWithCaption
+          src={engagement}
+          alt="Engagement"
+          caption="Getting Engaged"
+          width="20%"
+          isRight
+        />
         <Typography variant="body1" align="center" gutterBottom>
           2024 saw us getting a head start on the “in sickness” part of the
           wedding vows. Victoria had a run-in with a mandolin (the slicer, not
@@ -155,6 +203,12 @@ const AboutUs: React.FC = () => {
           instructions are upside down, and your partner insists they “know what
           they&lsquo;re doing.”
         </Typography>
+        <ImageWithCaption
+          src={brix}
+          alt="Our Home"
+          caption="Our First House"
+          width="20%"
+        />
         <Typography variant="body1" align="center" gutterBottom>
           Let&lsquo;s just say there were a few moments of tension (and maybe
           some slightly raised voices), but we made it through with only a
@@ -171,6 +225,13 @@ const AboutUs: React.FC = () => {
           Thomas that we needed a dog—because what better moment than six weeks
           into a new house filled with chaos?
         </Typography>
+        <ImageWithCaption
+          src={kevin}
+          alt="Kevin"
+          caption="Little Kevin"
+          width="20%"
+          isRight
+        />
         <Typography variant="body1" align="center" gutterBottom>
           Thomas, who had previously held firm on “after the wedding in May
           2025,” gave the slightest indication that he might be open to the

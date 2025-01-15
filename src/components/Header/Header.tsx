@@ -36,7 +36,7 @@ const Header: React.FC = () => {
           className="header-title"
           sx={{ marginTop: { xs: 0, md: '-30px' } }}
         >
-          Victoria & Thomas
+          Victoria <span style={{ fontSize: '50px' }}>&</span> Thomas
         </Typography>
         <Toolbar
           sx={{ boxShadow: '0 3px 3px -2px gray', minHeight: 50 }}
@@ -63,7 +63,7 @@ const Header: React.FC = () => {
             color="inherit"
             edge="end"
             onClick={toggleMobileMenu}
-            sx={{ display: { xs: 'flex', md: 'none' } }}
+            sx={{ display: { xs: 'flex', md: 'none' }, margin: '0 auto' }}
           >
             <MenuIcon />
           </IconButton>

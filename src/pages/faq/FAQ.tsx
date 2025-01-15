@@ -21,27 +21,23 @@ const FAQ: React.FC = () => {
         ></AccordionItem>
         <AccordionItem
           question="Where is the wedding taking place?"
-          answer="he ceremony will take place at The Keep, located on the grounds of Hedingham Castle. The reception will follow in a marquee adjacent to the mansion. On-site parking is available for guests who need it."
+          answer="The ceremony will take place at The Keep, located on the grounds of Hedingham Castle. The reception will follow in a marquee adjacent to the mansion. On-site parking is available."
         ></AccordionItem>
         <AccordionItem
           question="Can I bring a plus one?"
           answer="If your invitation includes a plus one, it will be clearly indicated with an unnamed 'guest.' If you have any questions about bringing a plus one, please feel free to contact Victoria or Thomas for clarification."
         ></AccordionItem>
         <AccordionItem
-          question="Is there a gift registry?"
-          answer="We are kindly requesting donations toward our honeymoon fund. However, for those who would prefer to give a traditional gift, a separate registry is available on our website."
-        ></AccordionItem>
-        <AccordionItem
           question="What happens after the ceremony?"
-          answer="Following the ceremony, we will have a reception and dinner in the mansion. Day guests do not need to RSVP separately for the reception. For more details about the schedule and events, please visit our website."
+          answer="Following the ceremony, we will have a reception and dinner in the mansion. Day guests do not need to RSVP separately for the reception. For more details about the schedule and events, please visit The Day page."
         ></AccordionItem>
         <AccordionItem
           question="Are children welcome at the wedding?"
-          answer="Unfortunately, we are unable to accommodate children at the wedding, though babes in arms are welcome. If you have any concerns or questions, please feel free to reach out to Victoria or Thomas."
+          answer="Unfortunately, we are unable to accommodate children at the wedding, though babes in arms are welcome. If you have any concerns/questions or are planning on bringing a baby, please feel free to reach out to Victoria or Thomas."
         ></AccordionItem>
         <AccordionItem
           question="What type of food and drink will be served?"
-          answer="A three-course wedding breakfast will be served to all day guests, followed by buffet food in the evening for both day and evening guests. We can accommodate dietary requirements upon request, so please let us know in advance."
+          answer="A three-course wedding breakfast will be served to all day guests, followed by food in the evening for both day and evening guests. We can accommodate dietary requirements upon request, so please let us know in advance. There will be alcoholic and soft drink options available throughout the day and a bar in the evening."
         ></AccordionItem>
         <AccordionItem
           question="Will there be dancing or entertainment?"
@@ -57,14 +53,14 @@ const FAQ: React.FC = () => {
         ></AccordionItem>
         <AccordionItem
           question="How do I RSVP?"
-          answer="Please RSVP by filling out the form on our website. We kindly ask that all guests respond in advance."
+          answer="Please RSVP by filling out the form on our website. We kindly ask that all guests respond in advance by the 1st March."
         ></AccordionItem>
         <AccordionItem
           question="Is Kevin Coming?"
           answer="No, the little terror will be looked after for the day. A big thank you to Nicola and Jason for taking care of him!"
         ></AccordionItem>
         <AccordionItem
-          question="Will there be Alpaca's at the wedding?"
+          question="Will there be Alpacas at the wedding?"
           answer="Unfortunately, no alpacas will be joining us — Thomas was not allowed to have them :("
         ></AccordionItem>
       </Box>

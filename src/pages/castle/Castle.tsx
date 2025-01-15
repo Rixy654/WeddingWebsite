@@ -22,7 +22,7 @@ const Castle: React.FC = () => {
           12th century by Aubrey de Vere, a Norman baron who was granted the
           manor by William the Conqueror. The de Vere family, who became the
           Earls of Oxford, maintained ownership for over 500 years."
-          imageSrc="https://theundergroundmap.com/wp/wp-content/uploads/2015/06/aubreydevere.jpg"
+          imageSrc="https://www.visitessex.com/dmsimgs/9-0060_839434724.jpg"
         />
         <TwoColumnLayout
           title="Architecture"

@@ -33,14 +33,12 @@
 }
 
 .seal {
-  width: 100px;
-  height: 100px;
-  background-color: #b22222; /* Dark red for a wax seal */
+  width: 200px;
+  height: 200px;
   border-radius: 50%;
   color: #fff;
   font-size: 12px;
   font-weight: bold;
-  box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.4);
   text-transform: uppercase;
   position: absolute;
   top: 200px; /* Position near the bottom of the flap */
@@ -50,6 +48,17 @@
   z-index: 2;
   transform-origin: top center; /* Set the origin for the rotation animation */
   transition: top 2s ease; /* Animation timing for smooth open/close */
+}
+
+@media only screen and (max-width: 600px) {
+  .seal {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+.seal img {
+  width: 100%;
 }
 
 .seal.open {
