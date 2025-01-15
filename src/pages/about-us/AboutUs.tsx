@@ -34,10 +34,10 @@ const AboutUs: React.FC = () => {
           yacht piracy), and a surprise guest appearance from Francesca, a tipsy
           woman who invited herself to our table. Francesca had many questions
           about our date, pulled up a chair, almost fell over (multiple times),
-          and left us with a story we&quot;ll never forget.
+          and left us with a story we&lsquo;ll never forget.
         </Typography>
         <Typography variant="body1" align="center" gutterBottom>
-          We were so engrossed in conversation that we didn&quot;t touch our
+          We were so engrossed in conversation that we didn&lsquo;t touch our
           food and only left when the staff gently kicked us out. From there, we
           wandered around central London for hours. Thomas was limping from an
           overly enthusiastic spin class the day before, which Victoria
@@ -63,7 +63,7 @@ const AboutUs: React.FC = () => {
           The romance blossomed from there, taking us on adventures big and
           small. Our first major trip together was to Brighton, where we said
           &#34;I love you&#34; for the first time, fittingly on the beach and,
-          of course, surrounded by seagulls—because why wouldn&quot;t they show
+          of course, surrounded by seagulls—because why wouldn&lsquo;t they show
           up? Brighton also marked the start of our tradition of collecting
           cuddly toys from every trip, each one with a name and a story (no
           surprises to anyone who knows us). Sasquatch, the very first from that
@@ -71,10 +71,10 @@ const AboutUs: React.FC = () => {
           ring box when Thomas proposed a couple of years later.
         </Typography>
         <Typography variant="body1" align="center" gutterBottom>
-          Next came Berlin, which was Thomas&quot; first trip abroad and where
+          Next came Berlin, which was Thomas&lsquo; first trip abroad and where
           we explored the city with a mix of excitement and way too much
           bratwurst. From there, the adventures kept coming. There was a
-          romantic forest getaway Thomas planned for Victoria&quot;s birthday,
+          romantic forest getaway Thomas planned for Victoria&lsquo;s birthday,
           where his enthusiasm slightly overshadowed practical details like how
           far away it was. (Spoiler: We spent as much on renting a car as the
           trip itself.)
@@ -94,7 +94,7 @@ const AboutUs: React.FC = () => {
           By summer 2022, we decided it was time to take the next big step and
           moved in together in Canary Wharf. Our new home had arguably one of
           the best views in London, which we celebrated with countless mornings
-          of Buck&quot;s Fizz on the balcony—a tradition we embraced with great
+          of Buck&lsquo;s Fizz on the balcony—a tradition we embraced with great
           enthusiasm.
         </Typography>
         <Typography variant="body1" align="center" gutterBottom>
@@ -103,7 +103,7 @@ const AboutUs: React.FC = () => {
           return to London in January both thoroughly unwell.
         </Typography>
         <Typography variant="body1" align="center" gutterBottom>
-          Once we&quot;d recovered in 2023, Thomas surprised Victoria with
+          Once we&lsquo;d recovered in 2023, Thomas surprised Victoria with
           another birthday trip, this time bringing our yacht heist dreams full
           circle—a week away on a yacht, complete with a hot tub. Not quite
           stolen (or driven by seagulls), but the yacht experience finally
@@ -121,9 +121,9 @@ const AboutUs: React.FC = () => {
           booked with 48 hours notice for their second date.
         </Typography>
         <Typography variant="body1" align="center" gutterBottom>
-          By early October, we&quot;d already booked our wedding venue. We only
+          By early October, we&lsquo;d already booked our wedding venue. We only
           viewed one, but when you know, you know, right? Later that month, for
-          Thomas&quot; birthday, we jetted off to Florence and Rome for a
+          Thomas&lsquo; birthday, we jetted off to Florence and Rome for a
           whirlwind Italian adventure—pasta, wine, and plenty of pizza.
           Naturally, we returned home the day before making another huge
           decision: reserving the plot for our new-build house. In true “us”
@@ -139,12 +139,12 @@ const AboutUs: React.FC = () => {
         <Typography variant="body1" align="center" gutterBottom>
           2024 saw us getting a head start on the “in sickness” part of the
           wedding vows. Victoria had a run-in with a mandolin (the slicer, not
-          the instrument—though honestly, the instrument would&quot;ve been less
-          painful), resulting in part of her top finger bidding her farewell.
-          Not to be outdone, Thomas managed to dislocate his knee while reaching
-          for a cheese grater. Yes, a cheese grater. If you&quot;re wondering
-          how that&quot;s even possible, trust us, we&quot;re still scratching
-          our heads too.
+          the instrument—though honestly, the instrument would&lsquo;ve been
+          less painful), resulting in part of her top finger bidding her
+          farewell. Not to be outdone, Thomas managed to dislocate his knee
+          while reaching for a cheese grater. Yes, a cheese grater. If
+          you&lsquo;re wondering how that&lsquo;s even possible, trust us,
+          we&lsquo;re still scratching our heads too.
         </Typography>
         <Typography variant="body1" align="center" gutterBottom>
           We then moved out of our flat in June 2024 and into our new house in
@@ -153,13 +153,13 @@ const AboutUs: React.FC = () => {
           someone on crutches dress and shower tested a relationship, try
           figuring out which piece of wood is the “front panel” while the
           instructions are upside down, and your partner insists they “know what
-          they&quot;re doing.”
+          they&lsquo;re doing.”
         </Typography>
         <Typography variant="body1" align="center" gutterBottom>
-          Let&quot;s just say there were a few moments of tension (and maybe
+          Let&lsquo;s just say there were a few moments of tension (and maybe
           some slightly raised voices), but we made it through with only a
           couple of mystery screws left over. Turns out, piecing together a home
-          is about more than just furniture—it&quot;s about patience,
+          is about more than just furniture—it&lsquo;s about patience,
           compromise, and the occasional deep breath to stop yourself from
           throwing a screwdriver across the room.
         </Typography>
@@ -175,49 +175,49 @@ const AboutUs: React.FC = () => {
           Thomas, who had previously held firm on “after the wedding in May
           2025,” gave the slightest indication that he might be open to the
           idea. Naturally, Victoria ran with it. By the time our plane touched
-          down, we&quot;d set up an account, found a puppy, and started
+          down, we&lsquo;d set up an account, found a puppy, and started
           messaging about him. The next day, we arranged to meet him. The day
           after that, we visited. And by the day after that, little Kevin was
           coming home with us. Three days from first message to full-time puppy
           parents—because when you know, you know!
         </Typography>
         <Typography variant="body1" align="center" gutterBottom>
-          Of course, Kevin wasn&quot;t going to make things too easy. The
+          Of course, Kevin wasn&lsquo;t going to make things too easy. The
           following weeks tested our relationship in new ways—broken sleep, 3
           a.m. bathroom runs (for Kevin, not us), and plenty of chewed toys.
-          Let&quot;s just say getting up every few hours for a puppy isn&quot;t
-          nearly as cute as Instagram makes it look. But despite the sleepless
-          nights and the occasional tantrum (ours, not Kevin&quot;s), we
-          wouldn&quot;t have it any other way.
+          Let&lsquo;s just say getting up every few hours for a puppy
+          isn&lsquo;t nearly as cute as Instagram makes it look. But despite the
+          sleepless nights and the occasional tantrum (ours, not Kevin&lsquo;s),
+          we wouldn&lsquo;t have it any other way.
         </Typography>
         <Typography variant="body1" align="center" gutterBottom>
           Kevin is now the centre of our universe—spoiled rotten, absolutely
           adored, and somehow managing to be both the most chaotic and the best
-          decision we&quot;ve ever made.
+          decision we&lsquo;ve ever made.
         </Typography>
         <Typography variant="body1" align="center" gutterBottom>
-          And here we are today! We&quot;ve just hosted our first Christmas in
-          our new home, we&quot;re full-time puppy parents to the wonderfully
-          chaotic Kevin, and we&quot;re in the midst of planning our wedding.
+          And here we are today! We&lsquo;ve just hosted our first Christmas in
+          our new home, we&lsquo;re full-time puppy parents to the wonderfully
+          chaotic Kevin, and we&lsquo;re in the midst of planning our wedding.
         </Typography>
         <Typography variant="body1" align="center" gutterBottom>
           The past three and a half years have been nothing short of an
-          adventure. We&quot;ve seen it all—three football promotions (including
-          an absolutely insane two-week period where both Oxford and Ipswich got
-          promoted, which, if you know football, is nothing short of a miracle),
-          multiple job changes, relocations, holidays, far too many encounters
-          with seagulls, and everything in between.
+          adventure. We&lsquo;ve seen it all—three football promotions
+          (including an absolutely insane two-week period where both Oxford and
+          Ipswich got promoted, which, if you know football, is nothing short of
+          a miracle), multiple job changes, relocations, holidays, far too many
+          encounters with seagulls, and everything in between.
         </Typography>
         <Typography variant="body1" align="center" gutterBottom>
           If we can survive a year of kitchen disasters, missing digits, dodgy
           knees, buying a house, moving into said house, and raising a puppy,
-          we&quot;re feeling pretty confident about this whole “for better or
+          we&lsquo;re feeling pretty confident about this whole “for better or
           worse” thing.
         </Typography>
         <Typography variant="body1" align="center" gutterBottom>
           Now, with all the craziness behind us (well, most of it), we
-          can&quot;t wait to celebrate our wedding day with all of you and start
-          the next chapter of this wonderfully unpredictable journey. ❤️
+          can&lsquo;t wait to celebrate our wedding day with all of you and
+          start the next chapter of this wonderfully unpredictable journey. ❤️
         </Typography>
       </Box>
     </PageWrapper>

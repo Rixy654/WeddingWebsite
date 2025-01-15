@@ -12,12 +12,14 @@ import Travel from '../pages/travel';
 import Day from '../pages/day';
 import Registry from '../pages/registry';
 import FAQ from '../pages/faq';
+import Homepage from '../pages/homepage';
 
 const App: React.FC = () => {
   return (
     <Router>
       <Routes>
         <Route path="/" element={<LandingPage />} />
+        <Route path="/home" element={<Homepage />} />
         <Route path="/about" element={<AboutUs />} />
         <Route path="/rsvp" element={<RSVP />} />
         <Route path="/rsvp-success" element={<RSVPThanks />} />

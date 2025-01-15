@@ -11,7 +11,7 @@ import {
 import MenuIcon from '@mui/icons-material/Menu';
 
 import './style.css';
-import headerImage from '../../assets/headerImage.jpeg';
+import headerImage from '../../assets/headerImage.png';
 import MenuLink from '../MenuLink';
 
 const Header: React.FC = () => {
@@ -30,7 +30,12 @@ const Header: React.FC = () => {
           alt="Header Image"
           sx={{ width: '100%' }}
         />
-        <Typography variant="h1" component="div" className="header-title">
+        <Typography
+          variant="h1"
+          component="div"
+          className="header-title"
+          sx={{ marginTop: { xs: 0, md: '-30px' } }}
+        >
           Victoria & Thomas
         </Typography>
         <Toolbar
@@ -44,12 +49,13 @@ const Header: React.FC = () => {
               justifyContent: 'center',
             }}
           >
+            <MenuLink link="/home" text="Home" />
+            <MenuLink link="/about" text="About us" />
             <MenuLink link="/rsvp" text="RSVP" />
             <MenuLink link="/castle" text="The Castle" />
             <MenuLink link="/accommodation" text="Accommodation" />
             <MenuLink link="/travel" text="Travel" />
             <MenuLink link="/day" text="The Day" />
-            <MenuLink link="/about" text="About us" />
             <MenuLink link="/registry" text="Registry" />
             <MenuLink link="/faq" text="FAQs" />
           </Box>
@@ -70,14 +76,16 @@ const Header: React.FC = () => {
         sx={{
           display: { xs: 'block', md: 'none' },
           '& .MuiDrawer-paper': { width: 250 },
+          margin: '0 auto',
         }}
       >
+        <MenuLink link="/home" text="Home" />
+        <MenuLink link="/about" text="About us" />
         <MenuLink link="/rsvp" text="RSVP" />
         <MenuLink link="/castle" text="The Castle" />
         <MenuLink link="/accommodation" text="Accommodation" />
         <MenuLink link="/travel" text="Travel" />
         <MenuLink link="/day" text="The Day" />
-        <MenuLink link="/about" text="About us" />
         <MenuLink link="/registry" text="Registry" />
       </Drawer>
     </>

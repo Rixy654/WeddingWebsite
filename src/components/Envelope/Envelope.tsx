@@ -9,7 +9,7 @@ const Envelope: React.FC = () => {
   const navigate = useNavigate();
 
   const toggleEnvelope = () => {
-    const path = `/about`;
+    const path = `/home`;
     setIsOpen(!isOpen);
     setTimeout(() => navigate(path), 500);
   };
