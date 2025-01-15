@@ -36,9 +36,9 @@ const Homepage: React.FC = () => {
               sx={{ marginBottom: '20px' }}
             >
               We are so excited to share this special day with all of our loved
-              ones! Your presence means the world to us, and we can&lsquo;t wait
+              ones! Your presence means the world to us, and we can&rsquo;t wait
               to celebrate together. Thank you for being part of our journey as
-              we begin this new chapter. Let&lsquo;s make unforgettable
+              we begin this new chapter. Let&rsquo;s make unforgettable
               memories!
             </Typography>
             <Button variant="contained" color="primary" href="/rsvp">
