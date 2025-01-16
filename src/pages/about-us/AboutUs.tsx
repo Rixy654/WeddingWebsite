@@ -156,10 +156,10 @@ const AboutUs: React.FC = () => {
         <Typography variant="body1" align="center" gutterBottom>
           Then came the 3rd of September 2023. Exactly two years after our very
           first date, Thomas proposed in our living room. The celebration began
-          with Bucks Fizz on the balcony (naturally) and was followed by dinner
-          at The Shard, just like our second date—though this time, sensibly
-          booked at a reasonable hour rather than the last-minute, 10 p.m. slot
-          booked with 48 hours notice for their second date.
+          with Buck&rsquo;s Fizz on the balcony (naturally) and was followed by
+          dinner at The Shard, just like our second date—though this time,
+          sensibly booked at a reasonable hour rather than the last-minute, 10
+          p.m. slot booked with 48 hours notice for their second date.
         </Typography>
         <Typography variant="body1" align="center" gutterBottom>
           By early October, we&rsquo;d already booked our wedding venue. We only

@@ -1,4 +1,5 @@
 import * as React from 'react';
+import { useState, useEffect } from 'react';
 import { Box, Typography, Button } from '@mui/material';
 import { Grid } from '@material-ui/core';
 
@@ -17,10 +18,23 @@ const TwoColumnLayout: React.FC<{
   imageSrc,
   imageOnLeft = false,
 }) => {
+  const [width, setWidth] = useState<number>(window.innerWidth);
+
+  useEffect(() => {
+    window.addEventListener('resize', handleWindowSizeChange);
+    return () => {
+      window.removeEventListener('resize', handleWindowSizeChange);
+    };
+  }, []);
+
+  const handleWindowSizeChange = () => {
+    setWidth(window.innerWidth);
+  };
+
   return (
     <Box sx={{ padding: 4 }}>
       <Grid container spacing={4} alignItems="center">
-        {imageOnLeft && (
+        {imageOnLeft && width > 768 && (
           <Grid item xs={12} md={6}>
             <Box
               component="img"
@@ -67,8 +81,7 @@ const TwoColumnLayout: React.FC<{
           </Box>
         </Grid>
 
-        {/* Image Column if imageOnLeft is false */}
-        {!imageOnLeft && (
+        {(!imageOnLeft || width <= 768) && (
           <Grid item xs={12} md={6}>
             <Box
               component="img"

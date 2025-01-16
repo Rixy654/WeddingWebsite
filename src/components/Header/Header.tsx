@@ -34,7 +34,7 @@ const Header: React.FC = () => {
           variant="h1"
           component="div"
           className="header-title"
-          sx={{ marginTop: { xs: 0, md: '-30px' } }}
+          sx={{ marginTop: { xs: 0, md: '-40px' } }}
         >
           Victoria <span style={{ fontSize: '50px' }}>&</span> Thomas
         </Typography>
@@ -87,6 +87,7 @@ const Header: React.FC = () => {
         <MenuLink link="/travel" text="Travel" />
         <MenuLink link="/day" text="The Day" />
         <MenuLink link="/registry" text="Registry" />
+        <MenuLink link="/faq" text="FAQs" />
       </Drawer>
     </>
   );

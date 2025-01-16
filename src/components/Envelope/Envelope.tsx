@@ -31,7 +31,7 @@ const Envelope: React.FC = () => {
       <div className={`seal ${isOpen ? 'open' : ''}`}>
         <img src={seal} alt="seal" />
       </div>
-      <div className="envelope-body">You&apos;re Invited</div>
+      <div className="envelope-body">You&apos;re Invited!</div>
     </div>
   );
 };

@@ -24,7 +24,7 @@ const Travel: React.FC = () => {
           Hedingham Castle, Castle Hedingham, Halstead CO9 3DJ
         </Typography>
         <Typography variant="body1" align="center" gutterBottom>
-          Parking on-site available
+          On-site parking available
         </Typography>
         <Typography
           variant="h4"
@@ -36,16 +36,19 @@ const Travel: React.FC = () => {
         </Typography>
         <Grid container spacing={4}>
           <Grid item xs={12} sm={6} md={3}>
-            <InfoCard title="Sudbury" text="Distance: 15 mins" />
+            <InfoCard title="Sudbury" text="Distance: 15 mins drive" />
           </Grid>
           <Grid item xs={12} sm={6} md={3}>
-            <InfoCard title="Braintree" text="Distance: 20 mins" />
+            <InfoCard title="Braintree" text="Distance: 20 mins drive" />
           </Grid>
           <Grid item xs={12} sm={6} md={3}>
-            <InfoCard title="Chappel & Wakes Colne" text="Distance: 25 mins" />
+            <InfoCard
+              title="Chappel & Wakes Colne"
+              text="Distance: 25 mins drive"
+            />
           </Grid>
           <Grid item xs={12} sm={6} md={3}>
-            <InfoCard title="Colchester" text="Distance: 40 mins" />
+            <InfoCard title="Colchester" text="Distance: 40 mins drive" />
           </Grid>
         </Grid>
         <Typography
@@ -54,7 +57,7 @@ const Travel: React.FC = () => {
           textAlign="center"
           sx={{ marginTop: '20px' }}
         >
-          Taxi&apos;s
+          Taxis
         </Typography>
         <Grid container spacing={4}>
           <Grid item xs={12} sm={6} md={3}>
