@@ -31,10 +31,11 @@ const AboutUs: React.FC = () => {
         <Typography variant="body1" align="center" gutterBottom>
           It all started in 2021, just as the world was reopening after
           lockdowns, and apparently, so were we. We met online and spent three
-          months having deeply intellectual discussions about how to steal a
-          yacht and how seagulls might help us pull off the perfect maritime
-          heist. Naturally, we decided it was time to meet in person to refine
-          our heist plan.
+          months having deeply intellectual discussions about{' '}
+          <i>how to steal a yacht</i> and{' '}
+          <i>how seagulls might help us pull off the perfect maritime heist</i>.
+          Naturally, we decided it was time to meet in person to refine our
+          heist plan.
         </Typography>
         <Typography variant="body1" align="center" gutterBottom>
           In September, we had our first date in a wine bar in Covent Garden,
@@ -77,9 +78,9 @@ const AboutUs: React.FC = () => {
         <Typography variant="body1" align="center" gutterBottom>
           Our fourth date was even more dramatic. This time, Hyde Park was the
           culprit. We lost track of time while walking and found ourselves
-          locked in once again, this time at 3 a.m. on a Sunday night. Once
-          again, we scaled the fence—partners in (accidental) crime, if not
-          quite in yacht theft.
+          locked in once again, this time at 3am on a Sunday night. Once again,
+          we scaled the fence—partners in (accidental) crime, if not quite in
+          yacht theft.
         </Typography>
         <Typography variant="body1" align="center" gutterBottom>
           The romance blossomed from there, taking us on adventures big and
@@ -180,7 +181,7 @@ const AboutUs: React.FC = () => {
         <ImageWithCaption
           src={engagement}
           alt="Engagement"
-          caption="Getting Engaged"
+          caption="Getting engaged"
           width="20%"
           isRight
         />
@@ -206,7 +207,7 @@ const AboutUs: React.FC = () => {
         <ImageWithCaption
           src={brix}
           alt="Our Home"
-          caption="Our First House"
+          caption="Our first house"
           width="20%"
         />
         <Typography variant="body1" align="center" gutterBottom>

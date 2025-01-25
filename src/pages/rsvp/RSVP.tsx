@@ -133,8 +133,8 @@ const RSVP: React.FC = () => {
               </Typography>
               <Typography variant="body1" align="center" gutterBottom>
                 <b>Attire: </b>Wedding Formal. Please keep in mind that the
-                ceremony venue, The Keep, has steep stairs and that the drinks
-                reception will be partily held outside on a lawn.
+                ceremony venue, The Keep, has steep uneven stairs and that the
+                drinks reception will be partially held outside on a lawn.
               </Typography>
               <RSVPForm handleSubmit={handleSubmit} guestType="day" />
             </>

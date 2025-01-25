@@ -50,7 +50,7 @@ const Header: React.FC = () => {
             }}
           >
             <MenuLink link="/home" text="Home" />
-            <MenuLink link="/about" text="About us" />
+            <MenuLink link="/about" text="About Us" />
             <MenuLink link="/rsvp" text="RSVP" />
             <MenuLink link="/castle" text="The Castle" />
             <MenuLink link="/accommodation" text="Accommodation" />
@@ -80,7 +80,7 @@ const Header: React.FC = () => {
         }}
       >
         <MenuLink link="/home" text="Home" />
-        <MenuLink link="/about" text="About us" />
+        <MenuLink link="/about" text="About Us" />
         <MenuLink link="/rsvp" text="RSVP" />
         <MenuLink link="/castle" text="The Castle" />
         <MenuLink link="/accommodation" text="Accommodation" />

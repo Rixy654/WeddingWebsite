@@ -13,12 +13,12 @@ const FAQ: React.FC = () => {
         </Typography>
         <AccordionItem
           question="What should I wear?"
-          answer="The dress code for our wedding is wedding formal. Please keep in mind that the ceremony venue, The Keep, has steep stairs and that the drinks
-                reception will be partily held outside on a lawn. For your safety and comfort, we recommend avoiding long dresses or high heels that may be difficult to navigate on the stairs."
+          answer="The dress code for our wedding is wedding formal. Please keep in mind that the ceremony venue, The Keep, has steep uneven stairs and that the drinks
+                reception will be partially held outside on a lawn."
         ></AccordionItem>
         <AccordionItem
           question="What time does the ceremony/reception start?"
-          answer="The ceremony will begin at 2:30 PM, but we encourage guests to arrive from 1:30 PM onwards. Tea and coffee will be available for you to enjoy in The Keep before the ceremony starts."
+          answer="The ceremony will begin at 2:30pm, but we encourage guests to arrive from 1:30pm onwards. Tea and coffee will be available for you to enjoy in The Keep before the ceremony starts."
         ></AccordionItem>
         <AccordionItem
           question="Where is the wedding taking place?"
@@ -49,12 +49,12 @@ const FAQ: React.FC = () => {
           answer="We kindly request that the ceremony be phone-free and ask that no photos be taken during this time. However, feel free to take as many photos as you'd like during the rest of the day. Our photographer will also be capturing moments throughout the event."
         ></AccordionItem>
         <AccordionItem
-          question="What time should I leave?"
+          question="What time does the day finish?"
           answer="The mansion closes at midnight, so all guests are encouraged to stay until then to enjoy the full celebration."
         ></AccordionItem>
         <AccordionItem
-          question="Do you have any mobility issues or special requirements?"
-          answer="If you have any mobility concerns or special requirements, please don’t hesitate to contact Victoria or Thomas. We want to ensure everyone is comfortable and able to fully enjoy the day."
+          question="Do I need to inform you of any mobility concerns or special requirements?"
+          answer="If you have any mobility concerns or special requirements, please contact Victoria or Thomas. The ceremony venue, The Keep, has steep stairs and we want to ensure everyone is comfortable and able to enjoy the day."
         ></AccordionItem>
         <AccordionItem
           question="How do I RSVP?"

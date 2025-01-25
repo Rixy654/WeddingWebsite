@@ -91,7 +91,7 @@ const RSVPDayForm: React.FC<{
     >
       <TextField
         type="text"
-        label="Your Name"
+        label="Your Full Name"
         value={primaryGuest.name}
         onChange={(e) => handlePrimaryGuestChange('name', e.target.value)}
         required
@@ -127,19 +127,22 @@ const RSVPDayForm: React.FC<{
         fullWidth
       />
       <FormControl fullWidth required>
-        <InputLabel id="dietary-label">Dietary Requirements</InputLabel>
+        <InputLabel id="dietary-label">
+          Dietary Requirements or Allergies
+        </InputLabel>
         <Select
           labelId="dietary-label"
           value={primaryGuest.dietaryRequirements}
           onChange={(e) =>
             handlePrimaryGuestChange('dietaryRequirements', e.target.value)
           }
-          label="Dietary Requirements"
+          label="Dietary Requirements or Allergies"
         >
           <MenuItem value="none">None</MenuItem>
           <MenuItem value="vegetarian">Vegetarian</MenuItem>
           <MenuItem value="vegan">Vegan</MenuItem>
           <MenuItem value="gluten-free">Gluten Free</MenuItem>
+          <MenuItem value="dairy-free">Dairy Free</MenuItem>
           <MenuItem value="other">Other</MenuItem>
         </Select>
       </FormControl>
@@ -171,7 +174,7 @@ const RSVPDayForm: React.FC<{
         >
           <TextField
             type="text"
-            label={`Guest Name`}
+            label={`Guest Full Name`}
             value={guest.name}
             onChange={(e) => handleGuestChange(index, 'name', e.target.value)}
             required
@@ -182,7 +185,6 @@ const RSVPDayForm: React.FC<{
             label={`Guest Email`}
             value={guest.email}
             onChange={(e) => handleGuestChange(index, 'email', e.target.value)}
-            required
             fullWidth
           />
           <FormControl fullWidth required>
@@ -208,7 +210,7 @@ const RSVPDayForm: React.FC<{
           />
           <FormControl fullWidth required>
             <InputLabel id={`dietary-label-${index}`}>
-              Dietary Requirements
+              Dietary Requirements or Allergies
             </InputLabel>
             <Select
               labelId={`dietary-label-${index}`}
@@ -216,12 +218,13 @@ const RSVPDayForm: React.FC<{
               onChange={(e) =>
                 handleGuestChange(index, 'dietaryRequirements', e.target.value)
               }
-              label="Dietary Requirements"
+              label="Dietary Requirements or Allergies"
             >
               <MenuItem value="none">None</MenuItem>
               <MenuItem value="vegetarian">Vegetarian</MenuItem>
               <MenuItem value="vegan">Vegan</MenuItem>
               <MenuItem value="gluten-free">Gluten Free</MenuItem>
+              <MenuItem value="dairy-free">Dairy Free</MenuItem>
               <MenuItem value="other">Other</MenuItem>
             </Select>
           </FormControl>

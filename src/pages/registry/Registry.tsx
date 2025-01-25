@@ -10,14 +10,22 @@ const Registry: React.FC = () => {
         <Typography variant="h2" gutterBottom textAlign="center">
           Gift Registry
         </Typography>
+        <Typography variant="body1" align="center" gutterBottom>
+          We are so grateful to have you celebrate this special day with us, and
+          your presence alone is truly the greatest gift we could ask for.
+        </Typography>
+        <Typography variant="body1" align="center" gutterBottom>
+          That said, if you would like to mark the occasion with a gift, we’ve
+          created a registry to which you can find the link below.
+        </Typography>
         <Typography
           variant="body1"
           align="center"
           gutterBottom
           sx={{ marginBottom: '30px' }}
         >
-          Thank you so much for considering gifting us anything. The link to do
-          so is below
+          Please know that your love and support mean the most to us, and
+          there’s absolutely no obligation!
         </Typography>
         <Button
           href="https://prezola.com/buy/view/222145"
