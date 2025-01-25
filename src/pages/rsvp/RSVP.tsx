@@ -147,7 +147,7 @@ const RSVP: React.FC = () => {
                 gutterBottom
                 sx={{ marginTop: '10px' }}
               >
-                <b>Arrival: </b>All evening guests should aim to arrive at 8pm
+                <b>Arrival: </b>All evening guests should aim to arrive at 8pm.
               </Typography>
               <Typography variant="body1" align="center" gutterBottom>
                 <b>Attire: </b>Wedding Formal.

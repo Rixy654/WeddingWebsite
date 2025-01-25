@@ -245,8 +245,8 @@ const AboutUs: React.FC = () => {
         </Typography>
         <Typography variant="body1" align="center" gutterBottom>
           Of course, Kevin wasn&rsquo;t going to make things too easy. The
-          following weeks tested our relationship in new ways—broken sleep, 3
-          a.m. bathroom runs (for Kevin, not us), and plenty of chewed toys.
+          following weeks tested our relationship in new ways—broken sleep, 3am
+          bathroom runs (for Kevin, not us), and plenty of chewed toys.
           Let&rsquo;s just say getting up every few hours for a puppy
           isn&rsquo;t nearly as cute as Instagram makes it look. But despite the
           sleepless nights and the occasional tantrum (ours, not Kevin&rsquo;s),
